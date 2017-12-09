@@ -26,6 +26,7 @@
     render() {
       return (
         <div>
+            <h1> Searching github users </h1>
           <form onSubmit={event => this.onSubmit(event)}>
             <label htmlFor="searchText" style={{fontWeight: 'bold'}}>Search by user name: </label>
             <input
@@ -48,7 +49,7 @@
   
     render() {
       return (
-        <div>
+        <div> 
           {this.users}
         </div>
       );
@@ -60,6 +61,7 @@
     render() {
       return (
         <div>
+           
           <img src={this.props.user.avatar_url} style={{maxWidth: '100px'}}/>
           <p><a href={this.props.user.html_url} target="_blank">{this.props.user.login}</a></p>
         </div>
@@ -71,4 +73,4 @@
   ReactDOM.render(
     <App />,
     document.getElementById('root')
-  );
+  ); 
